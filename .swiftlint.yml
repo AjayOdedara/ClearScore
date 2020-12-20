@@ -1,0 +1,17 @@
+disabled_rules:
+- trailing_whitespace
+- empty_enum_arguments
+- vertical_parameter_alignment
+- implicit_getter
+- identifier_name
+
+included: # paths to include during linting. `--path` is ignored if present.
+  - FavoriteApp
+  - FavoriteAppTests
+  - FavoriteAppUITests
+excluded:
+  - Pods
+
+
+line_length: 180
+
