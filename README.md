@@ -27,19 +27,17 @@ The following steps will guide you through the process of running this applicati
 2. Checkout this repository
 3. Open `ClearScore.workspace` with Xcode
 4. Go to the project settings, and change the code signing team to your own
-5. Wait for the Swift Packages to download if not.
 
 Code signing settings are left at automatic here for simplicity, you can set these to manual if needed but these steps will not take you through that process.
 
-7. Attach an iPhone running iOS 13.0
-8. Ensure the iPhone has development mode enabled, from the Devices & Simulators window: <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>2</kbd>
-9. Clean, build and run the application on an iPhone running iOS 13.0
+6. Attach an iPhone running iOS 13.0
+7. Ensure the iPhone has development mode enabled, from the Devices & Simulators window: <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>2</kbd>
+8. Clean, build and run the application on an iPhone running iOS 13.0
 
 ## Features
 
 Below is the set of user stories that outline the intended functionality of this mobile application.
 
-### User Stories
 - Fetch & Display Credit Score
 - Custom Animated Progress bar
 - Architecture MVVM
