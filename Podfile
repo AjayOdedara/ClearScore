@@ -1,15 +1,17 @@
-# platform :ios, '13.0'
+platform :ios, '13.0'
 
-use_frameworks!
+
 target 'ClearScore' do
-	pod 'SwiftLint'
-end
-target 'ClearScoreTests' do
-	inherit! :search_paths
-	# Pods for testing
-end
-
-target 'ClearScoreUITests' do
-	# Pods for testing
+	use_frameworks!
+	
+	target 'ClearScoreTests' do
+		inherit! :search_paths
+		pod 'KIF', :configurations => ['Debug']
+	end
+	
+	target 'ClearScoreUITests' do
+		# Pods for testing
+	end
+	
 end
 

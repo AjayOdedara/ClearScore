@@ -10,6 +10,8 @@ import Combine
 
 class DashboardViewController: UIViewController {
 	
+	@IBOutlet var scoreProgressView: ScoreProgressView!
+	
 	lazy var viewModel: ScoreViewModel = {
 		let viewModel = ScoreViewModel()
 		return viewModel
@@ -19,38 +21,44 @@ class DashboardViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		setupUI()
 		viewModel.fetchScore()
 	}
 	
-	private func bindViewModel() {
-		
-		viewModel.$scoreReport.sink { [self] _ in
-			switch viewModel.scoreReport {
-			case .data(model: let scoreReport):
-				DLog("Got Successfull Response")
-				GCD.runOnMainThread {
-					refreshTheUI(withScore: scoreReport)
-				}
-			default:
-				DLog("Something went wrong or still Idle")
-			}
-		}.store(in: &cancellables)
-		
-		viewModel.$onShowError.sink { [self] _ in
-			DLog("Error Alert")
-			GCD.runOnMainThread {
-				presentSingleButtonDialog(alert: viewModel.onShowError!)
-			}
-		}.store(in: &cancellables)
-		
-	}
-	
 	private func setupUI() {
-		
+		self.title = viewModel.title
+		viewModel.viewDelegate = self
+		scoreProgressView.scoreLabelSize = 40
+		scoreProgressView.safePercent = 700
+	}
+}
+
+// MARK: - Update Data
+extension DashboardViewController: ScoreViewModelDelegate {
+	
+	func errorMessageDidChange(message: String) {
+		let alert = SingleButtonAlert(title: DashboardConstants.AlertView.alertTitle,
+									  message: message,
+									  action: AlertAction(buttonTitle: DashboardConstants.AlertView.alertOkayButtonTitle, handler: {
+										DLog("Alert action clicked")
+									  }))
+		GCD.runOnMainThread {
+			self.presentSingleButtonDialog(alert: alert)
+		}
 	}
 	
-	private func refreshTheUI(withScore score: Score) {
-		print("refreshTheUI")
+	func scoreDidChange() {
+		DLog("Score Report Loaded")
+		guard let report = viewModel.creditScoreData else { return }
+		GCD.runOnMainThread {
+			self.refreshTheUI(withScore: report)
+		}
+	}
+	
+	private func refreshTheUI(withScore data: CreditScore) {
+		guard let currentScore = data.creditReportInfo?.score else { return }
+		let scorePercent = Double ( currentScore * 1000 / 700 ) / 1000
+		scoreProgressView.setScore(to: scorePercent, score: currentScore, withAnimation: true )
 	}
 }
 

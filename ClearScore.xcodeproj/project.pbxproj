@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		04FF7B04ACDF3B638A223BC3 /* Pods_ClearScoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52AEF8DEFBD4F033AFB434A /* Pods_ClearScoreTests.framework */; };
-		0AD3967D81F5507D2087B9D7 /* Pods_ClearScoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78429398F0E883C338CAD9D /* Pods_ClearScoreUITests.framework */; };
 		90C3777C8FB5E9830A5DF1AC /* Pods_ClearScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D047B8170A42B7D789AC7D80 /* Pods_ClearScore.framework */; };
 		9A0D49FE258E45DB00253BEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D49FD258E45DB00253BEF /* AppDelegate.swift */; };
 		9A0D4A00258E45DB00253BEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D49FF258E45DB00253BEF /* SceneDelegate.swift */; };
@@ -16,10 +15,9 @@
 		9A0D4A05258E45DB00253BEF /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0D4A03258E45DB00253BEF /* Dashboard.storyboard */; };
 		9A0D4A07258E45E200253BEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0D4A06258E45E200253BEF /* Assets.xcassets */; };
 		9A0D4A0A258E45E200253BEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0D4A08258E45E200253BEF /* LaunchScreen.storyboard */; };
-		9A0D4A15258E45E300253BEF /* ClearScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D4A14258E45E300253BEF /* ClearScoreTests.swift */; };
 		9A0D4A20258E45E300253BEF /* ClearScoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D4A1F258E45E300253BEF /* ClearScoreUITests.swift */; };
 		9A0D4A46258E892500253BEF /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D4A45258E892500253BEF /* ScoreViewModel.swift */; };
-		9A0D4A4B258E897800253BEF /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D4A4A258E897800253BEF /* Score.swift */; };
+		9A0D4A4B258E897800253BEF /* CreditScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D4A4A258E897800253BEF /* CreditScore.swift */; };
 		9A0D4A62258E8DD200253BEF /* ScoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D4A5B258E8DD200253BEF /* ScoreService.swift */; };
 		9A0D4A63258E8DD200253BEF /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D4A5C258E8DD200253BEF /* ServiceConstants.swift */; };
 		9A0D4A64258E8DD200253BEF /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D4A5D258E8DD200253BEF /* BaseService.swift */; };
@@ -31,6 +29,22 @@
 		9A0D4A8A258E901B00253BEF /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D4A87258E901B00253BEF /* LogHelper.swift */; };
 		9A0D4A94258E908500253BEF /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D4A91258E908500253BEF /* StringExtension.swift */; };
 		9A51F90A258ED3380047D648 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51F907258ED3370047D648 /* GCD.swift */; };
+		9A51F932258EDC990047D648 /* ScoreProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51F931258EDC990047D648 /* ScoreProgressView.swift */; };
+		9A51F960258FC3E30047D648 /* AttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51F95F258FC3E30047D648 /* AttributedStringExtension.swift */; };
+		9A51F968258FD9910047D648 /* ScoreViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51F967258FD9910047D648 /* ScoreViewModelProtocol.swift */; };
+		9A51F97A258FEF420047D648 /* DashboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51F979258FEF420047D648 /* DashboardConstants.swift */; };
+		9A51F97F258FEFD90047D648 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A51F97E258FEFD90047D648 /* Localizable.strings */; };
+		9A51F99D258FFD8F0047D648 /* DecodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51F991258FFD8E0047D648 /* DecodableHelper.swift */; };
+		9A51F99E258FFD8F0047D648 /* MockResponseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51F992258FFD8E0047D648 /* MockResponseHelper.swift */; };
+		9A51F99F258FFD8F0047D648 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51F994258FFD8E0047D648 /* ServiceTests.swift */; };
+		9A51F9A0258FFD8F0047D648 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51F995258FFD8E0047D648 /* MockURLSession.swift */; };
+		9A51F9A1258FFD8F0047D648 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51F996258FFD8E0047D648 /* MockURLSessionDataTask.swift */; };
+		9A51F9A2258FFD8F0047D648 /* CreditScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51F998258FFD8E0047D648 /* CreditScoreTests.swift */; };
+		9A51F9A3258FFD8F0047D648 /* CreditScoreValidResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A51F99A258FFD8F0047D648 /* CreditScoreValidResponse.json */; };
+		9A51F9A4258FFD8F0047D648 /* CreditScoreEmptyResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A51F99B258FFD8F0047D648 /* CreditScoreEmptyResponse.json */; };
+		9A51F9A5258FFD8F0047D648 /* CreditScoreInvalidResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A51F99C258FFD8F0047D648 /* CreditScoreInvalidResponse.json */; };
+		9A51F9B925901C910047D648 /* AlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51F9B825901C910047D648 /* AlertTests.swift */; };
+		BB0C0556D161D1EC40D44376 /* Pods_ClearScore_ClearScoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5D523D37A3FEF9E1E2B618 /* Pods_ClearScore_ClearScoreUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +66,12 @@
 
 /* Begin PBXFileReference section */
 		014B7E8879C29CDA53933CFC /* Pods-ClearScoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearScoreUITests.release.xcconfig"; path = "Target Support Files/Pods-ClearScoreUITests/Pods-ClearScoreUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2A5D523D37A3FEF9E1E2B618 /* Pods_ClearScore_ClearScoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClearScore_ClearScoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35264974654862AB6B728CEF /* Pods-ClearScore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearScore.release.xcconfig"; path = "Target Support Files/Pods-ClearScore/Pods-ClearScore.release.xcconfig"; sourceTree = "<group>"; };
 		3F3DF5EFB4C02D337920133F /* Pods-ClearScoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearScoreTests.debug.xcconfig"; path = "Target Support Files/Pods-ClearScoreTests/Pods-ClearScoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		48154B335E911E04FDF0C205 /* Pods-ClearScoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearScoreTests.release.xcconfig"; path = "Target Support Files/Pods-ClearScoreTests/Pods-ClearScoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		4C460F296D7373C38A71C4E7 /* Pods-ClearScore-ClearScoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearScore-ClearScoreUITests.release.xcconfig"; path = "Target Support Files/Pods-ClearScore-ClearScoreUITests/Pods-ClearScore-ClearScoreUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5321D07289F53B6A79E0AD5B /* Pods-ClearScore-ClearScoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearScore-ClearScoreUITests.debug.xcconfig"; path = "Target Support Files/Pods-ClearScore-ClearScoreUITests/Pods-ClearScore-ClearScoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A0D49FA258E45DB00253BEF /* ClearScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0D49FD258E45DB00253BEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A0D49FF258E45DB00253BEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,13 +81,12 @@
 		9A0D4A09258E45E200253BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A0D4A0B258E45E200253BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A0D4A10258E45E300253BEF /* ClearScoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClearScoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A0D4A14258E45E300253BEF /* ClearScoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearScoreTests.swift; sourceTree = "<group>"; };
 		9A0D4A16258E45E300253BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A0D4A1B258E45E300253BEF /* ClearScoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClearScoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0D4A1F258E45E300253BEF /* ClearScoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearScoreUITests.swift; sourceTree = "<group>"; };
 		9A0D4A21258E45E300253BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A0D4A45258E892500253BEF /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
-		9A0D4A4A258E897800253BEF /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		9A0D4A4A258E897800253BEF /* CreditScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScore.swift; sourceTree = "<group>"; };
 		9A0D4A5B258E8DD200253BEF /* ScoreService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreService.swift; sourceTree = "<group>"; };
 		9A0D4A5C258E8DD200253BEF /* ServiceConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConstants.swift; sourceTree = "<group>"; };
 		9A0D4A5D258E8DD200253BEF /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
@@ -82,10 +98,24 @@
 		9A0D4A87258E901B00253BEF /* LogHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogHelper.swift; sourceTree = "<group>"; };
 		9A0D4A91258E908500253BEF /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		9A51F907258ED3370047D648 /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
+		9A51F931258EDC990047D648 /* ScoreProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreProgressView.swift; sourceTree = "<group>"; };
+		9A51F95F258FC3E30047D648 /* AttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringExtension.swift; sourceTree = "<group>"; };
+		9A51F967258FD9910047D648 /* ScoreViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModelProtocol.swift; sourceTree = "<group>"; };
+		9A51F979258FEF420047D648 /* DashboardConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardConstants.swift; sourceTree = "<group>"; };
+		9A51F97E258FEFD90047D648 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		9A51F991258FFD8E0047D648 /* DecodableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodableHelper.swift; sourceTree = "<group>"; };
+		9A51F992258FFD8E0047D648 /* MockResponseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockResponseHelper.swift; sourceTree = "<group>"; };
+		9A51F994258FFD8E0047D648 /* ServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
+		9A51F995258FFD8E0047D648 /* MockURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		9A51F996258FFD8E0047D648 /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
+		9A51F998258FFD8E0047D648 /* CreditScoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditScoreTests.swift; sourceTree = "<group>"; };
+		9A51F99A258FFD8F0047D648 /* CreditScoreValidResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CreditScoreValidResponse.json; sourceTree = "<group>"; };
+		9A51F99B258FFD8F0047D648 /* CreditScoreEmptyResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CreditScoreEmptyResponse.json; sourceTree = "<group>"; };
+		9A51F99C258FFD8F0047D648 /* CreditScoreInvalidResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CreditScoreInvalidResponse.json; sourceTree = "<group>"; };
+		9A51F9B825901C910047D648 /* AlertTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTests.swift; sourceTree = "<group>"; };
 		BFCA5D7AAB7A9527532E33FC /* Pods-ClearScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearScore.debug.xcconfig"; path = "Target Support Files/Pods-ClearScore/Pods-ClearScore.debug.xcconfig"; sourceTree = "<group>"; };
 		D047B8170A42B7D789AC7D80 /* Pods_ClearScore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClearScore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52AEF8DEFBD4F033AFB434A /* Pods_ClearScoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClearScoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F78429398F0E883C338CAD9D /* Pods_ClearScoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClearScoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F898E1885EA45A97923C2719 /* Pods-ClearScoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearScoreUITests.debug.xcconfig"; path = "Target Support Files/Pods-ClearScoreUITests/Pods-ClearScoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,7 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AD3967D81F5507D2087B9D7 /* Pods_ClearScoreUITests.framework in Frameworks */,
+				BB0C0556D161D1EC40D44376 /* Pods_ClearScore_ClearScoreUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +156,8 @@
 				48154B335E911E04FDF0C205 /* Pods-ClearScoreTests.release.xcconfig */,
 				F898E1885EA45A97923C2719 /* Pods-ClearScoreUITests.debug.xcconfig */,
 				014B7E8879C29CDA53933CFC /* Pods-ClearScoreUITests.release.xcconfig */,
+				5321D07289F53B6A79E0AD5B /* Pods-ClearScore-ClearScoreUITests.debug.xcconfig */,
+				4C460F296D7373C38A71C4E7 /* Pods-ClearScore-ClearScoreUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -171,7 +203,11 @@
 		9A0D4A13258E45E300253BEF /* ClearScoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				9A0D4A14258E45E300253BEF /* ClearScoreTests.swift */,
+				9A51F990258FFD8E0047D648 /* MockDataParser */,
+				9A51F999258FFD8F0047D648 /* MockJsons */,
+				9A51F997258FFD8E0047D648 /* Model */,
+				9A51F993258FFD8E0047D648 /* Services */,
+				9A51F9B825901C910047D648 /* AlertTests.swift */,
 				9A0D4A16258E45E300253BEF /* Info.plist */,
 			);
 			path = ClearScoreTests;
@@ -189,6 +225,7 @@
 		9A0D4A33258E474200253BEF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9A51F97E258FEFD90047D648 /* Localizable.strings */,
 				9A0D4A06258E45E200253BEF /* Assets.xcassets */,
 				9A0D4A08258E45E200253BEF /* LaunchScreen.storyboard */,
 				9A0D4A0B258E45E200253BEF /* Info.plist */,
@@ -228,7 +265,7 @@
 		9A0D4A6D258E8F1E00253BEF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9A0D4A4A258E897800253BEF /* Score.swift */,
+				9A0D4A4A258E897800253BEF /* CreditScore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -246,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				9A0D4A91258E908500253BEF /* StringExtension.swift */,
+				9A51F95F258FC3E30047D648 /* AttributedStringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -263,8 +301,10 @@
 		9A51F923258ED6980047D648 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				9A51F979258FEF420047D648 /* DashboardConstants.swift */,
 				9A0D4A01258E45DB00253BEF /* DashboardViewController.swift */,
-				9A0D4A45258E892500253BEF /* ScoreViewModel.swift */,
+				9A51F931258EDC990047D648 /* ScoreProgressView.swift */,
+				9A51F972258FEE260047D648 /* ViewModel */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -277,12 +317,58 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		9A51F972258FEE260047D648 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9A51F967258FD9910047D648 /* ScoreViewModelProtocol.swift */,
+				9A0D4A45258E892500253BEF /* ScoreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9A51F990258FFD8E0047D648 /* MockDataParser */ = {
+			isa = PBXGroup;
+			children = (
+				9A51F991258FFD8E0047D648 /* DecodableHelper.swift */,
+				9A51F992258FFD8E0047D648 /* MockResponseHelper.swift */,
+			);
+			path = MockDataParser;
+			sourceTree = "<group>";
+		};
+		9A51F993258FFD8E0047D648 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9A51F994258FFD8E0047D648 /* ServiceTests.swift */,
+				9A51F995258FFD8E0047D648 /* MockURLSession.swift */,
+				9A51F996258FFD8E0047D648 /* MockURLSessionDataTask.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9A51F997258FFD8E0047D648 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A51F998258FFD8E0047D648 /* CreditScoreTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9A51F999258FFD8F0047D648 /* MockJsons */ = {
+			isa = PBXGroup;
+			children = (
+				9A51F99A258FFD8F0047D648 /* CreditScoreValidResponse.json */,
+				9A51F99B258FFD8F0047D648 /* CreditScoreEmptyResponse.json */,
+				9A51F99C258FFD8F0047D648 /* CreditScoreInvalidResponse.json */,
+			);
+			path = MockJsons;
+			sourceTree = "<group>";
+		};
 		FD83773BF71B82F9A3FB90C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				D047B8170A42B7D789AC7D80 /* Pods_ClearScore.framework */,
 				E52AEF8DEFBD4F033AFB434A /* Pods_ClearScoreTests.framework */,
-				F78429398F0E883C338CAD9D /* Pods_ClearScoreUITests.framework */,
+				2A5D523D37A3FEF9E1E2B618 /* Pods_ClearScore_ClearScoreUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -317,6 +403,7 @@
 				9A0D4A0C258E45E300253BEF /* Sources */,
 				9A0D4A0D258E45E300253BEF /* Frameworks */,
 				9A0D4A0E258E45E300253BEF /* Resources */,
+				46CA123B1D564355E96D561C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -395,6 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A0D4A0A258E45E200253BEF /* LaunchScreen.storyboard in Resources */,
+				9A51F97F258FEFD90047D648 /* Localizable.strings in Resources */,
 				9A0D4A07258E45E200253BEF /* Assets.xcassets in Resources */,
 				9A0D4A05258E45DB00253BEF /* Dashboard.storyboard in Resources */,
 			);
@@ -404,6 +492,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A51F9A3258FFD8F0047D648 /* CreditScoreValidResponse.json in Resources */,
+				9A51F9A5258FFD8F0047D648 /* CreditScoreInvalidResponse.json in Resources */,
+				9A51F9A4258FFD8F0047D648 /* CreditScoreEmptyResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +508,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		46CA123B1D564355E96D561C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClearScoreTests/Pods-ClearScoreTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClearScoreTests/Pods-ClearScoreTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClearScoreTests/Pods-ClearScoreTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		48EFCB64B31FDEDE5711D7BE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -495,7 +603,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ClearScoreUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ClearScore-ClearScoreUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -509,15 +617,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A51F960258FC3E30047D648 /* AttributedStringExtension.swift in Sources */,
+				9A51F97A258FEF420047D648 /* DashboardConstants.swift in Sources */,
 				9A0D4A65258E8DD200253BEF /* URLSessionProtocol.swift in Sources */,
 				9A0D4A8A258E901B00253BEF /* LogHelper.swift in Sources */,
+				9A51F968258FD9910047D648 /* ScoreViewModelProtocol.swift in Sources */,
 				9A0D4A75258E8F1E00253BEF /* Result.swift in Sources */,
 				9A0D4A02258E45DB00253BEF /* DashboardViewController.swift in Sources */,
 				9A0D49FE258E45DB00253BEF /* AppDelegate.swift in Sources */,
 				9A0D4A00258E45DB00253BEF /* SceneDelegate.swift in Sources */,
+				9A51F932258EDC990047D648 /* ScoreProgressView.swift in Sources */,
 				9A0D4A88258E901B00253BEF /* Alert.swift in Sources */,
 				9A0D4A46258E892500253BEF /* ScoreViewModel.swift in Sources */,
-				9A0D4A4B258E897800253BEF /* Score.swift in Sources */,
+				9A0D4A4B258E897800253BEF /* CreditScore.swift in Sources */,
 				9A0D4A62258E8DD200253BEF /* ScoreService.swift in Sources */,
 				9A0D4A63258E8DD200253BEF /* ServiceConstants.swift in Sources */,
 				9A0D4A77258E8F1E00253BEF /* FetchError.swift in Sources */,
@@ -532,7 +644,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A0D4A15258E45E300253BEF /* ClearScoreTests.swift in Sources */,
+				9A51F9A0258FFD8F0047D648 /* MockURLSession.swift in Sources */,
+				9A51F9B925901C910047D648 /* AlertTests.swift in Sources */,
+				9A51F9A1258FFD8F0047D648 /* MockURLSessionDataTask.swift in Sources */,
+				9A51F99E258FFD8F0047D648 /* MockResponseHelper.swift in Sources */,
+				9A51F99F258FFD8F0047D648 /* ServiceTests.swift in Sources */,
+				9A51F99D258FFD8F0047D648 /* DecodableHelper.swift in Sources */,
+				9A51F9A2258FFD8F0047D648 /* CreditScoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,7 +901,7 @@
 		};
 		9A0D4A2B258E45E300253BEF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F898E1885EA45A97923C2719 /* Pods-ClearScoreUITests.debug.xcconfig */;
+			baseConfigurationReference = 5321D07289F53B6A79E0AD5B /* Pods-ClearScore-ClearScoreUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -804,7 +922,7 @@
 		};
 		9A0D4A2C258E45E300253BEF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 014B7E8879C29CDA53933CFC /* Pods-ClearScoreUITests.release.xcconfig */;
+			baseConfigurationReference = 4C460F296D7373C38A71C4E7 /* Pods-ClearScore-ClearScoreUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,16 +1,18 @@
 PODS:
-  - SwiftLint (0.42.0)
+  - KIF (3.7.12):
+    - KIF/Core (= 3.7.12)
+  - KIF/Core (3.7.12)
 
 DEPENDENCIES:
-  - SwiftLint
+  - KIF
 
 SPEC REPOS:
   trunk:
-    - SwiftLint
+    - KIF
 
 SPEC CHECKSUMS:
-  SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
+  KIF: c71cc117944d8e6c807bfccbe675060caae79d60
 
-PODFILE CHECKSUM: a88c8a7820c72d3c5b2414d65e3dbfd9d40e2405
+PODFILE CHECKSUM: f101ff02c2976d9b14681e12c49067e72dd12ada
 
 COCOAPODS: 1.9.1

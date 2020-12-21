@@ -9,9 +9,9 @@ import Foundation
 
 class ScoreService: BaseService {
 	
-	func fetch (completionHandler: @escaping (Result<Score, FetchError>) -> Void) {
+	func fetch (completionHandler: @escaping (Result<CreditScore, FetchError>) -> Void) {
 		
-		fetch(listOf: Score.self, withURL: url(withPath: ServiceConstants.urls.score)) { (result) in
+		fetch(listOf: CreditScore.self, withURL: url(withPath: ServiceConstants.urls.score)) { (result) in
 			switch result {
 			case .success(let events):
 				completionHandler(Result.success(events))

@@ -9,7 +9,7 @@ import Foundation
 
 class BaseService {
 
-	private var session: URLSessionProtocol
+	var session: URLSessionProtocol
 	private var task: URLSessionDataTaskProtocol?
 	
 	init(session: URLSessionProtocol = URLSession.shared) {
